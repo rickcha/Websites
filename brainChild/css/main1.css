@@ -1,0 +1,59 @@
+body {
+
+	
+}
+
+#logo{
+	right: 500px;
+	text-align: center;
+}
+
+#logo img{	
+	max-height: 70px;
+}
+
+#menu{
+	min-width: 100%;
+	position: fixed;
+	text-align: center;
+}
+
+#menu ul{
+	background-color: rgba(0,0,0,0.5);
+}
+
+#menu li{
+	display: inline-block;
+}
+
+#mainimg{
+	text-align: center;
+}
+#mainimg p img{
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+
+
+#menu a{
+	font-weight: bold;
+	color: #FFF;
+}
+
+.nav a:hover { 
+	background-color: inherit !important; 
+	color: grey !important;
+
+}
+
+#footer{
+	text-align: center;
+	color: white;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	
+}
