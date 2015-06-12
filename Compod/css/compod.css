@@ -1,0 +1,124 @@
+#main-visual {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../img/main_visual.jpg) repeat-x;
+  background-size: cover;
+}
+
+footer {
+    padding: 10px 0;
+    padding-bottom: 0px;
+    background-color: #f8f8f8;
+}
+
+#title {
+  font-size: 40px;
+  color:green;
+  font-family: Arial;
+  text-align: center;
+  margin: 90px 90px 40px 40px;
+
+}
+
+#sub-title {
+  font-size: 30px;
+  color:green;
+  font-family: Arial;
+  text-align: center;
+}
+
+#brand-id {
+  margin-top: -18px;
+}
+
+hr {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+}
+
+/* Section Calatogue at index page*/
+
+.bg-dark {
+    color: black;
+    background-color: white;
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+.btn-default {
+    border-color: #DBEE59;
+    color: #222;
+    background-color: #DBEE59;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+/* Contact US */
+
+section {
+    padding: 55px 0;
+    padding-top: 31px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+  color: white;
+  background-color: #0D5740;
+}
+
+/* Services */
+#services{
+  background-color: white;
+}
+
+.service-box {
+    margin: 20px auto 0;
+    max-width: 400px;
+}
+
+.text-primary {
+    color: #DBEE59;
+}
+
+#navbar ul li {
+  font-weight: 700;
+}
+
+.footer-menu-divider {
+  padding-top: 13px;
+  font-size: 15px;
+  color: #00573F;
+}
+
+#current {
+  color: #00573F;
+}
+
+@media (max-width: 767px) {
+  li.footer-menu-divider { display: none; }
+}
