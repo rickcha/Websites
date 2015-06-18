@@ -865,3 +865,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+
+
+
+ul.navbar-right li{
+    color: black !important;
+}
