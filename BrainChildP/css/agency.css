@@ -869,6 +869,25 @@ body {
 
 
 
-ul.navbar-right li{
-    color: black !important;
+
+
+#logo_menu {
+    /*
+    border-radius: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+    background-color: #FED136;
+    */
+    margin-top: -15px;
+}
+
+#ignore {
+    background-color: transparent;
+}
+
+#ignore:hover {
+    color: #FED136;
 }
