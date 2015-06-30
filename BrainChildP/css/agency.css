@@ -995,3 +995,61 @@ nav > select {
   nav ul     { display: none; }
   nav select { display: inline-block; }
 }
+
+#partners img{
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+/*map*/
+#maesec{
+    
+}
+#mapdwl {
+    height:450px;
+    width:600px;
+
+}
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+.gm-style-iw h4, .gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+.gm-style-iw a {
+    color: #4272db;
+}
+
+#clients1{
+    
+    text-align: center;
+}
+#clients2{
+    
+    text-align: center;
+}
+#clients3{
+    
+    text-align: center;
+}
+
+#minihr {
+    margin-top:-10px;
+    border-style: solid;
+    border-width: 3px;
+    
+    width: 30%;
+    align: center;
+ }
+
+#partners img{
+    margin: 30px auto;
+}
+
+#what-we-do {
+    margin-top: 50px;
+}
