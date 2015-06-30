@@ -942,3 +942,39 @@ body {
 #page-top {
 
 }
+
+/* As of 0630 added below */
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FED136;
+    width: 20%;
+    align: center;
+ }
+
+ #menu {
+    z-index: 1;
+    background-color: #626262;
+    height: 80px;
+    width: 100%;
+    margin-top: 0px;
+    position: fixed;
+}
+
+#menu-navigation > ul {
+    list-style-type: none;
+    position: right;
+}
+
+#menu-navigation > ul > li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#menu-navigation > ul > li > a:hover{
+    color: white;
+    text-decoration: none;
+}
