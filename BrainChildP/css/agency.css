@@ -253,7 +253,6 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -265,13 +264,15 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/main.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    opacity: 0.5;
+
 }
 
 header .intro-text {
@@ -868,8 +869,11 @@ body {
 
 
 
+/* Customized styling CSS by Rick */
 
-
+#header-text {
+    color: black;
+}
 
 #logo_menu {
     /*
@@ -890,4 +894,51 @@ body {
 
 #ignore:hover {
     color: #FED136;
+}
+
+.blink_me {
+    font-size: 100%;
+
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+#custom-nav {
+    background-color: #222222;
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+#page-top {
+
 }
