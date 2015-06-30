@@ -24,22 +24,29 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-
 </head>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation Custom -->
+<body>
     <div id="menu">
-        <span><img id="logo_menu" src="img/logos/logo_lightGrey.png" alt="" height="50px" onMouseOver="this.src='img/logos/logo_yellow.png'" onMouseOut="this.src='img/logos/logo_lightGrey.png'"></span>
-        <div id="menu-navigation">
+        <nav>
+            <a href="#"><img src="img/logos/logo_lightGrey.png" alt="" height="50px" onMouseOver="this.src='img/logos/logo_yellow.png'" onMouseOut="this.src='img/logos/logo_lightGrey.png'"></a>
+
             <ul>
-                <li><a>ABOUT US</a></li>
-                <li><a>WHAT WE DO</a></li>
-                <li><a>PARTNERS</a></li>
-                <li><a>CONTACT US</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#what-we-do">WHAT WE DO</a></li>
+                <li><a href="#partners">PARTNERS</a></li>
+                <li><a href="#contact-us">CONTACT US</a></li>
             </ul>
-        </div>
+
+            <select onchange="if (this.value) window.location.href = this.value;"> 
+                <option value="" selected="selected"></option>
+
+                <option value="#">ABOUT US</option> 
+                <option value="#what-we-do">WHAT WE DO</option> 
+                <option value="#partners">PARTNERS</option> 
+                <option value="#contact-us">CONTACT US</option>
+            </select>
+        </nav>
     </div>
 
     <!-- Header -->
@@ -281,7 +288,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6" id="mapsec">
                     <div id="mapdwl"></div>
                 </div>
             </div>

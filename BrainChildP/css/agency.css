@@ -5,8 +5,10 @@
  */
 
 body {
+    /*
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    */
 }
 
 .text-muted {
@@ -933,16 +935,6 @@ body {
     100% { opacity: 1.0; }
 }
 
-#custom-nav {
-    background-color: #222222;
-    margin-top: -5px;
-    padding-bottom: 10px;
-}
-
-#page-top {
-
-}
-
 /* As of 0630 added below */
 
 hr {
@@ -964,22 +956,45 @@ hr {
     position: fixed;
 }
 
-#menu-navigation > ul {
-    list-style-type: none;
-    position: right;
+#menu > nav > a > img {
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-#menu-navigation > ul > li {
+#menu > nav > ul {
+    float: right;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+#menu > nav > ul > li {
     display: inline-block;
     padding-left: 30px;
 }
 
-#menu-navigation > ul > li > a:hover{
+#menu > nav > ul > li > a:hover{
     color: white;
     text-decoration: none;
 }
 
+nav > select {
+    -webkit-appearance: none;
+    display: none;
+    float: right;
+    width: 60px;
+    height: 40px;
+    overflow: hidden;
+    background: url(new_arrow.png) no-repeat right #ddd;
+    background-color: #fed136;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-right: 20px;
+}
 
+@media (max-width: 960px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
 
 #partners img{
     width: 150px;
@@ -989,10 +1004,13 @@ hr {
 
 
 /*map*/
-
+#maesec{
+    
+}
 #mapdwl {
     height:450px;
     width:600px;
+
 }
 .gm-style-iw * {
     display: block;
@@ -1019,7 +1037,6 @@ hr {
     text-align: center;
 }
 
-
 #minihr {
     margin-top:-10px;
     border-style: solid;
@@ -1029,7 +1046,10 @@ hr {
     align: center;
  }
 
-
- #partners img{
+#partners img{
     margin: 30px auto;
- }
+}
+
+#what-we-do {
+    margin-top: 50px;
+}
