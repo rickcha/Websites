@@ -273,8 +273,8 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    opacity: 0.5;
 
+    opacity: 1;
 }
 
 header .intro-text {
@@ -937,13 +937,26 @@ body {
 
 /* As of 0630 added below */
 
+#about-text {
+    width: 700px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    margin: -380px 50px 0px 0px;   
+    float: right;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+}
+
 hr {
     margin-top: 50px;
     margin-bottom: 50px;
     border-style: solid;
-    border-width: 4px;
+    border-width: 1px;
     border-color: #FED136;
-    width: 20%;
+    width: 80%;
     align: center;
  }
 
