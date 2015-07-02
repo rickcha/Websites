@@ -31,21 +31,24 @@
         <nav>
             <a href="#"><img src="img/logos/logo_lightGrey.png" alt="" height="50px" onMouseOver="this.src='img/logos/logo_yellow.png'" onMouseOut="this.src='img/logos/logo_lightGrey.png'"></a>
 
-            <ul>
+            <ul id="list-menu">
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#what-we-do">WHAT WE DO</a></li>
                 <li><a href="#partners">PARTNERS</a></li>
                 <li><a href="#contact-us">CONTACT US</a></li>
             </ul>
 
-            <select onchange="if (this.value) window.location.href = this.value;"> 
-                <option value="" selected="selected"></option>
-
-                <option value="#">ABOUT US</option> 
-                <option value="#what-we-do">WHAT WE DO</option> 
-                <option value="#partners">PARTNERS</option> 
-                <option value="#contact-us">CONTACT US</option>
-            </select>
+            <ul id="dropdown-menu">
+                <li>
+                    <a>MENU</a>
+                    <ul id="hidden-menu">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#what-we-do">WHAT WE DO</a></li>
+                        <li><a href="#partners">PARTNERS</a></li>
+                        <li><a href="#contact-us">CONTACT US</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </div>
 
@@ -53,20 +56,21 @@
     <header>
         <div id="background-img" class="container">
             <div class="intro-text">
+                <div>
+                    <div style="text-align:center; margin-bottom: 30px; font-size:40px;">BRAINCHILD PARTNERS, LLC.<span class="blink_me">|</span></div>
+
+                    <div id="div-2">
+                        <p>
+                        <b style="text-decoration: underline;">BRAINCHILD PARTNERS, LLC.</b> is an INTERNATIONAL ADVISORY & PROCUREMENT BOUTIQUE with offices in Seoul, Vancouver and Paris (Representative Office to be established) and is aimed at providing a tailored cross-border consultancy service for companies and organizations of all size, applying our INTELLIGENCE to a wide array of global business issues.
+
+                        We also provide a PLATFORM for our clients to gain insights on how to navigate such a dynamic business environment, given the global market’s diversity and complexity, and assist the clients with implementation SOLUTIONS.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <div id="about-text">
-        <div style="text-align:center; margin-bottom: 30px; font-size:40px;">BRAINCHILD PARTNERS, LLC.<span class="blink_me">|</span></div>
-        <div>
-            <p>
-            <b style="text-decoration: underline;">BRAINCHILD PARTNERS, LLC.</b> is an INTERNATIONAL ADVISORY & PROCUREMENT BOUTIQUE with offices in Seoul, Vancouver and Paris (Representative Office to be established) and is aimed at providing a tailored cross-border consultancy service for companies and organizations of all size, applying our INTELLIGENCE to a wide array of global business issues.
-
-            We also provide a PLATFORM for our clients to gain insights on how to navigate such a dynamic business environment, given the global market’s diversity and complexity, and assist the clients with implementation SOLUTIONS.
-            </p>
-        </div>
-    </div>
     <div class="content-section-a">
 
         <div class="container" id="what-we-do">
@@ -79,12 +83,41 @@
                     
                     <h2 class="section-heading">BRAINCHILD ADVISORY</h2>    
                     
-                    <p>provides strategic advice and practical solutions to assist the clients in globalizing the firm’s capacities and business practices.  We also provide a value-added and cross-border financing solution by leveraging our extensive networks with institutional and private investor communities.</p>                
+                    <p>provides strategic advice and practical solutions to assist the clients in globalizing the firm’s capacities and business practices.  We also provide a value-added and cross-border financing solution by leveraging our extensive networks with institutional and private investor communities.<a id="advisory-more" class="more">+more</a></p>                
                 </div>
 
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/worldmap02.png" alt="">
                 </div>
+
+                <!-- Hidden content to place -->
+                
+
+                <div id="advisory-more-hide">
+                <hr/>
+                <!--
+                    <hr class="section-heading-spacer">
+                    -->    
+                    <ul>
+                        <li>Market Intelligence and insights</li>
+                        <li>Business Development</li>
+                        <ul>
+                            <li>Identifying and exploring the new business opportunities </li>
+                            <li>Developing and implementing viable strategic options for entering a new market</li>
+                        </ul>
+                        <li>Market Entry and Partnering Strategy</li>
+                        <ul>
+                            <li>Identifying potential foreign partners</li>
+                            <li>Fostering new and existing relationships with relevant business interests</li>
+                        </ul>
+                        <li>Strategic Planning and Implementation</li>
+                        <ul>
+                            <li>Planning and executing through capacity building at every stage</li>
+                            <li>Creating outperformance strategies, leading to the winning market</li>
+                        </ul>
+                    </ul>         
+                </div>
+
             </div>
 
         </div>
@@ -106,12 +139,38 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">BRAINCHILD PROCUREMENT</h2>
                     <p>
-                        offers comprehensive services to 1) support commodity suppliers with marketing solutions and to 2) assist commodity buyers with procurement solutions in securing the supply of high quality. Also we also provide a cross-border financing solution by leveraging our extensive networks with institutional and private investor communities. 
+                        offers comprehensive services to 1) support commodity suppliers with marketing solutions and to 2) assist commodity buyers with procurement solutions in securing the supply of high quality. Also we also provide a cross-border financing solution by leveraging our extensive networks with institutional and private investor communities.
+                        <a id="procurement-more" class="more">+more</a>
                     </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/worldmap01.jpg" alt="">
                 </div>
+
+
+                <!-- Hidden content to place -->
+                
+
+                <div id="procurement-more-hide">
+                <hr/>
+                <!--
+                    <hr class="section-heading-spacer">
+                    -->    
+                    <ul>
+                        <li>Sourcing & Identification</li> 
+                        <li>Assessment and Audit </li>
+                        <ul>
+                            <li>Initial Screening</li>
+                            <li>On-site Visit </li>
+                            <li>Third-party Surveyor and Inspection Agency (if needed)</li>
+                            <li>Final Selection</li>  
+                        </ul>
+                        <li>Commercial Structuring - Contract Negotiation</li>
+                        <li>Transaction Support</li>
+                        <li>Logistics Arrangement & Monitoring </li>
+                    </ul>       
+                </div>
+
             </div>
 
         </div>
@@ -135,19 +194,35 @@
                     <h2 class="section-heading">BRAINCHILD LAB</h2>
                     <p>
                         provides customized business intelligence conferences, speaker solutions, and private board briefing on a broad range of business issues in a variety of ways, including keynotes, panel discussions and workshop.
+                        <a id="lab-more" class="more">+more</a>
                     </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/worldmap02.png" alt="">
                 </div>
-            </div>
 
+
+                <!-- Hidden content to place -->
+                
+
+                <div id="lab-more-hide">
+                <hr/>
+                <!--
+                    <hr class="section-heading-spacer">
+                    -->    
+                    <ul>
+                        <li>Market Intelligence and insights</li>
+                        <li>Content Development </li>
+                        <li>Conference Program Design </li>
+                        <li>Speaker Placement  </li>
+                        <li>Private Intelligence Briefing </li>
+                    </ul>      
+                </div>
+            </div>
         </div>
         <!-- /.container -->
 
     </div>
-
-
     <hr />
 <!--
     <aside class="clients">
@@ -275,7 +350,7 @@
             }
             </script>
 
-        <div class="container">
+        <div class="container" id="contact-us">
             
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
