@@ -944,13 +944,13 @@ body {
     font-weight: 700;
     margin: -380px 50px 0px 0px;   
     float: right;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 25px;
     padding: 20px;
 }
 
 .intro-text > div {
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 15px;
     text-transform: uppercase;
     opacity: 1;
@@ -995,6 +995,7 @@ body {
     float: right;
     padding-right: 50px;
     padding-top: 30px;
+    font-size: 10px;
 }
 
 #list-menu > li {
