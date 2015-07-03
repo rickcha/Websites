@@ -72,16 +72,19 @@ $('#lab-more').click(function(){
 
 $( document ).ready(function() {
     $( ".button-about-us" ).click(function( event ) {
-        $('html, body').animate({ scrollTop: 300}, 400, 'swing');
+        $('html, body').animate({ scrollTop: 200}, 400, 'swing');
     });
     $( ".button-what-we-do" ).click(function( event ) {
-        $('html, body').animate({ scrollTop:  $('#what-we-do').offset().top-130}, 400, 'swing');
+        var marginHr = $(".original-hr").css("margin-top");
+        var heightMenu = $("#menu").css("height");
+        var total = parseInt(marginHr) + parseInt(heightMenu);
+        $('html, body').animate({ scrollTop:  $('#what-we-do').offset().top-total}, 400, 'swing');
     });
     $( ".button-partners" ).click(function( event ) {
-        $('html, body').animate({ scrollTop: $('#partners').offset().top-130}, 400, 'swing');
+        $('html, body').animate({ scrollTop: $('#partners').offset().top}, 400, 'swing');
     });
     $( ".button-contact-us" ).click(function( event ) {
-        $('html, body').animate({ scrollTop:  $('#contact-us').offset().top-130}, 400, 'swing');
+        $('html, body').animate({ scrollTop:  $('#contact-us').offset().top}, 400, 'swing');
     });
 });
 
