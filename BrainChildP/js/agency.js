@@ -5,6 +5,7 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -68,4 +69,22 @@ $('#lab-more').click(function(){
         e.id = "lab-more-show"
     }
 });
+
+$( document ).ready(function() {
+    $( ".button-about-us" ).click(function( event ) {
+        $('html, body').animate({ scrollTop: 0}, 400, 'swing');
+    });
+    $( ".button-what-we-do" ).click(function( event ) {
+        $('html, body').animate({ scrollTop:  $('#what-we-do').offset().top-130}, 400, 'swing');
+    });
+    $( ".button-partners" ).click(function( event ) {
+        $('html, body').animate({ scrollTop: $('#partners').offset().top-130}, 400, 'swing');
+    });
+    $( ".button-contact-us" ).click(function( event ) {
+        $('html, body').animate({ scrollTop:  $('#contact-us').offset().top-130}, 400, 'swing');
+    });
+});
+
+
+
 
