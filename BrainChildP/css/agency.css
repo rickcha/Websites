@@ -951,12 +951,12 @@ body {
 
 .intro-text > div {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     text-transform: uppercase;
-    opacity: 0.8;
+    opacity: 1;
 }
 
-hr {
+.original-hr {
     margin-top: 50px;
     margin-bottom: 50px;
     border-style: solid;
@@ -964,7 +964,18 @@ hr {
     border-color: #FED136;
     width: 80%;
     align: center;
- }
+}
+
+.hidden-hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: solid;
+    width: 80%;
+    align: center;
+
+    border: 1px dotted black;
+    border-style: none none dotted;
+}
 
 #menu {
     z-index: 1;
@@ -994,6 +1005,8 @@ hr {
 #list-menu > li > a:hover{
     color: white;
     text-decoration: none;
+    cursor: pointer;
+
 }
 
 #dropdown-menu > li > a {
@@ -1064,6 +1077,7 @@ hr {
 #advisory-more-show {
     display: block;
     padding-top: 250px;
+    margin: 0px;
 }
 
 #procurement-more-hide {
