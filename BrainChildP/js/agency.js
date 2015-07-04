@@ -37,6 +37,17 @@ $('#dropdown-menu > li').click(function(){
 	}
 });
 
+function changeName (a1) {
+    // body...
+    var e2 = document.getElementById(a1);
+    if (e2.innerHTML == "+more") {
+        e2.innerHTML = "+hide";
+    }
+    else {
+        e2.innerHTML = "+more";
+    }
+}
+
 $('#advisory-more').click(function(){
     var e = document.getElementById("advisory-more-hide");
     if (e == null) {
@@ -44,8 +55,11 @@ $('#advisory-more').click(function(){
         e.id = "advisory-more-hide"
     }
     else {
+        
         e.id = "advisory-more-show"
     }
+
+    changeName('advisory-more');
 });
 
 $('#procurement-more').click(function(){
@@ -57,6 +71,8 @@ $('#procurement-more').click(function(){
     else {
         e.id = "procurement-more-show"
     }
+
+    changeName('procurement-more');
 });
 
 $('#lab-more').click(function(){
@@ -68,6 +84,8 @@ $('#lab-more').click(function(){
     else {
         e.id = "lab-more-show"
     }
+
+    changeName('lab-more');
 });
 
 $( document ).ready(function() {
@@ -87,7 +105,6 @@ $( document ).ready(function() {
         $('html, body').animate({ scrollTop:  $('#contact-us').offset().top-total}, 400, 'swing');
     });
 });
-
 
 
 

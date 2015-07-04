@@ -278,8 +278,8 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 380px;
+    padding-bottom: 220px;
 }
 
 header .intro-text .intro-lead-in {
@@ -984,6 +984,10 @@ body {
     width: 100%;
     margin-top: 0px;
     position: fixed;
+    /*
+    -moz-box-shadow: 0 0 30px 5px #999;
+    -webkit-box-shadow: 0 0 30px 5px #999;
+    */
 }
 
 #menu > nav > a > img {
@@ -1070,6 +1074,7 @@ body {
 .more {
     border-radius: 5px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #advisory-more-hide {
@@ -1169,5 +1174,6 @@ body {
     color: #626262;
     text-align: center;
     padding: 5px;
-
 }
+
+
