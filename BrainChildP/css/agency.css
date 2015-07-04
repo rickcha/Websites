@@ -1079,7 +1079,7 @@ body {
 #advisory-more-show {
     display: block;
     padding-top: 250px;
-    margin: 0px;
+    margin: -230px 0px 0px 0px;
 }
 
 #procurement-more-hide {
@@ -1089,6 +1089,7 @@ body {
 #procurement-more-show {
     display: block;
     padding-top: 250px;
+    margin: -230px 0px 0px 0px;
 }
 
 #lab-more-hide {
@@ -1098,6 +1099,7 @@ body {
 #lab-more-show {
     display: block;
     padding-top: 250px;
+    margin: -230px 0px 0px 0px;
 }
 
 #partners img{
