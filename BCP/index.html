@@ -9,17 +9,21 @@
 
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bcp.css" rel="stylesheet">
+	
+	<!--For tabs in the body-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 	<div class="container"> <!--container for relative size, container-fluid for full width-->
 		
 		<header class="row">
-			<div class="col-xs-6 col-md-4">
+			<div class="col-xs-3">
 				<a href="" id="logo"><img src="imgs/LOGO_BrainchildPartners.png" alt=""></a>
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-8" id="menu">
+			<div class="col-xs-9" id="menu">
 
 					<ul class="nav nav-pills pull-right">
 						<li><a href="">About Us</a></li>
@@ -42,41 +46,163 @@
 		<div id="mainimg">
 		</div>
 
+
 		<div id="aboutus" class="row">
-			<div class="col-xs-4 col-md-2" id="aboutus_top">
-				
+			<div class="col-xs-2" id="aboutus_id">
+				<h3>About Us</h3>
 			</div>
 
-			<div class="col-xs-14 col-sm-6 col-md-10" id="aboutus_body">
-				<p id="aboutus_text">
-			        <b style="text-decoration: underline;">BRAINCHILD PARTNERS, LLC.</b> is an INTERNATIONAL ADVISORY & PROCUREMENT BOUTIQUE with offices in Seoul, Vancouver and Paris (Representative Office to be established) <br>BCP is aimed at providing a tailored cross-border consultancy service for companies and organizations of all size, applying our INTELLIGENCE to a wide array of global business issues.
-
-			        We also provide a PLATFORM for our clients to gain insights on how to navigate such a dynamic business environment, given the global market’s diversity and complexity, and assist the clients with implementation SOLUTIONS.
-		    	</p>
-							
-					
+			<div class="col-xs-10" id="aboutus_body">
+				<pre id="aboutus_text"><b>BRAINCHILD PARTNERS, LLC.</b> is an <b>INTERNATIONAL ADVISORY & PROCUREMENT BOUTIQUE</b> with offices in <b>Seoul</b>, <b>Vancouver</b> and <b>Paris</b> (Representative Office to be established) BCP is aimed at providing a tailored cross-border consultancy service for companies and organizations of all size, applying our INTELLIGENCE to a wide array of global business issues.<br>We also provide a PLATFORM for our clients to gain insights on how to navigate such a dynamic business environment, given the global market’s diversity and complexity, and assist the clients with implementation SOLUTIONS.
+		    	</pre>
 			</div>
-	  			
-
 			
-
 		</div>
 		
-		<div id="contents">
-			<ul class="tabs group">
-				<li><a class="active" href="#/one">Tab 1</a></li>
-				<li><a href="#/two">Tab 2</a></li>
-				<li><a href="#/three">Tab 3</a></li>
-			</ul>
-
-			<div id="panels">
-				<p id="one">Panel 1</p>
-				<p id="two">Panel 2</p>
-				<p id="three">Panel 3</p>
+		<div id="contents" class="row">
+			<div class="col-xs-2" id="contents_id">
+				<h3>What We Do</h3>
 			</div>
+			<div class="col-xs-10" id="contents_body">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a data-toggle="tab" href="#advisory"><img src="imgs/c1.png" alt=""><br><p>Advisory</p></a>
+					</li>
+					
+					<li>
+						<a data-toggle="tab" href="#procurement"><img src="imgs/c2.png" alt=""><p>Procurement</p></a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#lab"><img src="imgs/c3.png" alt=""><p>Lab</p></a>
+					</li>
+					
+				</ul>
+
+				<div class="tab-content">
+
+					<div id="advisory" class="tab-pane fade in active">
+						<h4>ADVISORY</h4>
+						<p>We provide strategic advice and practical solutions to assist the clients in globalizing the firm’s capacities and business practices.<br>We also provide a value-added and cross-border financing solution by leveraging our extensive networks with institutional and private investor communities.
+							<ul>
+								<li>Market Intelligence and insights</li>
+	                            <li>Business Development</li>
+	                            <ul>
+	                                <li>Identifying and exploring the new business opportunities </li>
+	                                <li>Developing and implementing viable strategic options for entering a new market</li>
+	                            </ul>
+	                            <li>Market Entry and Partnering Strategy</li>
+	                            <ul>
+	                                <li>Identifying potential foreign partners</li>
+	                                <li>Fostering new and existing relationships with relevant business interests</li>
+	                            </ul>
+	                            <li>Strategic Planning and Implementation</li>
+	                            <ul>
+	                                <li>Planning and executing through capacity building at every stage</li>
+	                                <li>Creating outperformance strategies, leading to the winning market</li>
+	                            </ul>
+	                        </ul>
+                        </p>  
+						
+					</div>
+					<div id="procurement" class="tab-pane fade">
+						<h3>Menu 1</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div id="lab" class="tab-pane fade">
+						<h3>Menu 2</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+					</div>
+					
+				</div>
+			</div>
+
+		
+				
+				
+		
 		</div>
-		<div id="footer">
-			footer
+
+	<!-- map -->
+
+		<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>  
+            <script> 
+                google.maps.event.addDomListener(window, 'load', init);
+                var map;
+                function init() {
+                    var mapOptions = {
+                        center: new google.maps.LatLng(3.99182,-721.279021),
+                        zoom: 1,
+                        zoomControl: true,
+                        zoomControlOptions: {
+                            style: google.maps.ZoomControlStyle.DEFAULT,
+                        },
+                        disableDoubleClickZoom: false,
+                        mapTypeControl: false,
+                        scaleControl: false,
+                        scrollwheel: true,
+                        panControl: true,
+                        streetViewControl: false,
+                        draggable : true,
+                        overviewMapControl: false,
+                        overviewMapControlOptions: {
+                            opened: false,
+                        },
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    }
+                    var mapElement = document.getElementById('mapdwl');
+                    var map = new google.maps.Map(mapElement, mapOptions);
+                    var locations = [
+            ['Brainchild Partners Canada, Inc', 'Brainchild Partners Canada, Inc', 'undefined', 'undefined', 'undefined', 49.1997505, -122.91248489999998, 'https://mapbuildr.com/assets/img/markers/default.png'],['Brainchild Partners, LLC', 'undefined', 'undefined', 'undefined', 'undefined', 37.5154032, 127.07984980000003, 'https://mapbuildr.com/assets/img/markers/default.png']
+                    ];
+                    for (i = 0; i < locations.length; i++) {
+                        if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+                        if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+                        if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+                       if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+                       if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                        marker = new google.maps.Marker({
+                            icon: markericon,
+                            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                            map: map,
+                            title: locations[i][0],
+                            desc: description,
+                            tel: telephone,
+                            email: email,
+                            web: web
+                        });
+            link = '';     }
+            }
+            </script>
+
+
+		<div id="map">
+            
+            <div class="row">
+            	<div class="col-xs-2" id="mapid">
+            		<h3>Location</h3>
+            	</div>
+            	<div class="col-xs-10">
+            		<div class="col-xs-5">
+                    
+                
+                    
+                    <ul>
+                        <li><h5>Brainchild Partners, LLC</h5></li>
+                        <p>3F Yulchon Building, 20 Gukjegumyung-ro, Yeongdeungpo-gu, Seoul 150-877, Korea</p>
+                        <br/>
+                        <li><h5>Brainchild Partners Canada, Inc.</h5></li>
+                        <p>205-810 Quayside Dr., New Westminster, BC V3M 6B9, Canada</p>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6" id="mapsec">
+                    <div id="mapdwl"></div>
+                </div>	
+            	</div>
+                
+            </div>
+        
 		</div>	
 	</div>
 	
