@@ -32,3 +32,22 @@ $( document ).ready(function() {
         alert($(window).width());
     });
 });
+// Slide up and down
+/*
+$(function(){
+    $('#contents_body li').on('click',function(){
+        $('#contents_body li.active').removeClass('active');
+        $(this).addClass('active');
+
+        var panelToShow = $(this).attr('rel')
+        
+        $('.tab-content .active').slideUp(300,function(){
+            $(this).removeClass('active');
+            $('#' + panelToShow).slideDown(300, function(){
+                $(this).addClass('active');
+            });
+        });
+    });
+});
+*/
+
