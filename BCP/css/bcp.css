@@ -83,7 +83,7 @@ div #mainimg{
 */	font-family: arial, sans-serif;
 	font-size: 14px;
 	color: #565656;
-	margin: 0px -15px ;
+	/*margin: 0px -15px ;*/
 	padding: 50px 95px 36px;
 	text-align: justify;
 	text-justify: auto;
@@ -106,7 +106,7 @@ div #mainimg{
 	color: #a0a0a0;
 }
 #contents_body{
-	margin: 0 -15px;
+
 
 }
 #contents_body img{
@@ -144,46 +144,16 @@ div #mainimg{
 	font-family: arial, sans-serif;
 	font-size: 14px;
 	color: #565656;
-	margin: 0 -15px;
+	
 	padding: 30px 40px 36px ;
 	text-align: center;
-
+	background-color:green;
 }
 #partners img{
     width: 100px;
     height: 30px;
     margin: 10px;
 }
-
-#mapbody{
-	text-align: center;
-	background-color: #f5f5f5;
-	background-color: green;
-}
-.flags{
-	position: relative;
-	left: -30px;
-	width: 315px;
-	height: 200px;
-}
-
-.cities{
-	position: relative;
-	left: -30px;
-	
-	width: 315px;
-	height: 200px;	
-
-}
-#loca1{
-	
-	
-}
-#loca2{
-	
-	
-}
-
 
 #mapid{
 	background-color: #404040;
@@ -193,6 +163,63 @@ div #mainimg{
 }
 #mapid:hover{
 	color: #a0a0a0;
+}
+/*
+#mapbody{
+	margin: 0 -15px;
+	text-align: center;
+	background-color: #f5f5f5;
+	
+}*/
+
+.flags{
+	position: relative;
+	top: -200px;
+	left: -30px;
+	width: 315px;
+	height: 200px;
+	opacity: 0.5;
+}
+
+.cities{
+	position: relative;
+	top: 0;
+	left: -30px;
+	width: 315px;
+	height: 200px;	
+
+}
+.cities:hover{
+	position: relative;
+}
+#loca1 .cities:hover:after{
+	content: url(imgs/korea.gif);
+	display: block;
+	position: absolute;
+	background-color: black;
+
+}
+
+#loca1:hover{
+
+	background-color: black;
+	
+}
+#loca2{
+	
+	
+}
+
+
+
+#contactus_id{
+	background-color: #404040;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+#contactus_body{
+
 }
 
 /*map*/
