@@ -102,6 +102,9 @@ div #mainimg{
 	padding: 10px;
 	text-align: center;
 }
+#contents_id:hover{
+	color: #a0a0a0;
+}
 #contents_body{
 	margin: 0 -15px;
 
@@ -133,6 +136,9 @@ div #mainimg{
 	padding: 10px;
 	text-align: center;
 
+}
+#partners_id:hover{
+	color: #a0a0a0;
 }
 #partners_body{
 	font-family: arial, sans-serif;
@@ -185,7 +191,9 @@ div #mainimg{
 	padding: 10px;
 	text-align: center;
 }
-
+#mapid:hover{
+	color: #a0a0a0;
+}
 
 /*map*/
 
@@ -218,3 +226,11 @@ div #mainimg{
     
 }
 /*map*/
+
+/* Flip animation*/
+
+.flip:hover {
+	transform: rotateY(360deg);
+	transition: all 1.0s linear;
+	transform-style: preserve-3d;
+}
