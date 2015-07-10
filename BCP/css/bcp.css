@@ -49,12 +49,17 @@ div #mainimg{
 	border-top: 5px solid #404040;
 	border-bottom: 5px solid #404040;
 
-	background-image: url(../imgs/main2.jpg);
+	background-image: url(../imgs/lightbulb.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
 	background-size: cover;
 	
 	height: 700px;
+}
+#mainimg h1{
+	text-align: right;
+	margin-top: 650px;
+	color: #a0a0a0;
 }
 
 #aboutus{
@@ -100,8 +105,6 @@ div #mainimg{
 #contents_body{
 	margin: 0 -15px;
 
-	
-
 }
 #contents_body img{
 	width: 270px;
@@ -109,13 +112,72 @@ div #mainimg{
 }
 
 .tab-content div{
-	background-color: #e0e0e0;
+	background-color: #f5f5f5;
 	font-family: arial, sans-serif;
 	font-size: 14px;
 	color: #565656;
 	margin: 0px;
-	padding: 100px;
+	padding:50px;
+	border:dotted 1px;
 }
+#contents_body hr{
+	border-color: #808080;
+}
+
+#partners{
+	border-bottom: 5px solid #404040;
+}
+#partners_id{
+	background-color: #404040;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+
+}
+#partners_body{
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: #565656;
+	margin: 0 -15px;
+	padding: 30px 40px 36px ;
+	text-align: center;
+
+}
+#partners img{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+}
+
+#mapbody{
+	text-align: center;
+	background-color: #f5f5f5;
+	background-color: green;
+}
+.flags{
+	position: relative;
+	left: -30px;
+	width: 315px;
+	height: 200px;
+}
+
+.cities{
+	position: relative;
+	left: -30px;
+	
+	width: 315px;
+	height: 200px;	
+
+}
+#loca1{
+	
+	
+}
+#loca2{
+	
+	
+}
+
 
 #mapid{
 	background-color: #404040;
@@ -123,6 +185,7 @@ div #mainimg{
 	padding: 10px;
 	text-align: center;
 }
+
 
 /*map*/
 
@@ -145,5 +208,13 @@ div #mainimg{
 }
 .gm-style-iw a {
     color: #4272db;
+}
+#footer{
+    margin: 0 -15px;
+    
+    background-color: #202020;
+    color: #a0a0a0;
+    text-align: center;
+    
 }
 /*map*/
