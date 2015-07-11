@@ -51,3 +51,44 @@ $(function(){
 });
 */
 
+
+$('#advisory-more').click(function(){
+    var e = document.getElementById("advisory-more-hide");
+    if (e == null) {
+        var e = document.getElementById("advisory-more-show");
+        e.id = "advisory-more-hide"
+    }
+    else {
+        
+        e.id = "advisory-more-show"
+    }
+
+    changeName('advisory-more');
+});
+
+$('#procurement-more').click(function(){
+    var e = document.getElementById("procurement-more-hide");
+    if (e == null) {
+        var e = document.getElementById("procurement-more-show");
+        e.id = "procurement-more-hide"
+    }
+    else {
+        e.id = "procurement-more-show"
+    }
+
+    changeName('procurement-more');
+});
+
+$('#lab-more').click(function(){
+    var e = document.getElementById("lab-more-hide");
+    if (e == null) {
+        var e = document.getElementById("lab-more-show");
+        e.id = "lab-more-hide"
+    }
+    else {
+        e.id = "lab-more-show"
+    }
+
+    changeName('lab-more');
+});
+
