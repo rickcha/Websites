@@ -10,21 +10,29 @@ div.container{
 	background-color: #fff;
 	box-shadow: 15px 10px 5px #A0A0A0;
 	min-width: 900px;
+	width: 70%;
+
 }
 header{
-	margin: 10px;
+	margin: 0px;
 }
 header #logo{
 	opacity: 1;
-	padding-bottom: 100px;
 }
 header #logo:hover{
 	opacity: 0.5;
-	
+}
+
+#logo img {
+	height: 15%;
+	margin-top: 13px;
+	margin-left: 13px;
+	display: inline-block;
+
 }
 
 #menu{
-	margin-top: 82px;
+	margin-top: 80px;
 	
 }
 
@@ -32,50 +40,57 @@ header #logo:hover{
 	font-weight: bold;
 	/*color:#9fa1a4;*/
 	color:#404040;
+	font-family: Helvetica;
+	display: inline-block;
 }
-#menu a:hover{
-	/*box-shadow: 5px 5px 5px #a0a0a0;*/
-	color: #ff3333;
-	/*color: #3b3b9e;*/
-}
-div #mainimg{
-	margin-left: -15px;
-	margin-right: -15px;
-	border-radius: 0;
-	/*
-	border-top: 7px solid #ff0000;
-	border-bottom: 7px solid #ff0000;
-	*/
-	border-top: 5px solid #404040;
-	border-bottom: 5px solid #404040;
 
-	background-image: url(../imgs/lightbulb.png);
+#mainimg{
+	background-image: url("../imgs/LOGO_BrainchildPartners.png");
+	background-size: 50%;
+	margin-left: 300px;
+	margin-top: 150px;
+	height: 300px;
 	background-repeat: no-repeat;
-	background-position: 50%;
-	background-size: cover;
 	
-	height: 700px;
 }
-#mainimg h1{
-	text-align: right;
-	margin-top: 650px;
-	color: #a0a0a0;
+
+#maintext {
+	position: absolute;
+	width: 150px;
+	text-align: center;
 }
 
 #aboutus{
 	position: relative;
-	border-bottom: 5px solid #404040;
-	
+	margin-top: -110px;
+	margin-bottom: 200px;
 }
 #aboutus_id{
-	background-color: #404040;
+	background-color: #CAC7C4;
 	color: #fff;
-	padding: 10px;
 	text-align: center;
-
 }
 #aboutus_id:hover{
 	color: #a0a0a0;
+}
+#aboutus_body{
+	margin-left: 7%;
+}
+
+#aboutus_text1{
+/*	position: relative;
+	min-width: 500px;
+*/	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: #565656;
+	/*margin: 0px -15px ;*/
+	padding: 50px 95px 36px;
+	text-align: justify;
+	text-justify: auto;
+	margin-top: -160px;
+	margin-left: 180PX;
+	
+	/*border-left: 1px dotted #3b3b9e;*/
 }
 #aboutus_text{
 /*	position: relative;
@@ -87,27 +102,27 @@ div #mainimg{
 	padding: 50px 95px 36px;
 	text-align: justify;
 	text-justify: auto;
+	
 	/*border-left: 1px dotted #3b3b9e;*/
 }
 
-#contents{
 
-	border-bottom: 5px solid #404040;
+#contents{
+	margin-left: 7%;
 
 }
 
 #contents_id{
-	background-color: #404040;
+	background-color: #DDD;
 	color: #fff;
-	padding: 10px;
 	text-align: center;
 }
 #contents_id:hover{
 	color: #a0a0a0;
 }
 #contents_body{
-
-
+	margin-left: 7%;
+	
 }
 #contents_body img{
 	width: 270px;
@@ -122,18 +137,22 @@ div #mainimg{
 	margin: 0px;
 	padding:50px;
 	border:dotted 1px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+.tab-content h4{
+	text-align: center;
 }
 #contents_body hr{
 	border-color: #808080;
 }
 
 #partners{
-	border-bottom: 5px solid #404040;
 }
 #partners_id{
-	background-color: #404040;
+	background-color: #CAC7C4;
 	color: #fff;
-	padding: 10px;
 	text-align: center;
 
 }
@@ -141,13 +160,12 @@ div #mainimg{
 	color: #a0a0a0;
 }
 #partners_body{
+	margin-left: 7%;
 	font-family: arial, sans-serif;
 	font-size: 14px;
 	color: #565656;
-	
 	padding: 30px 40px 36px ;
 	text-align: center;
-	background-color:green;
 }
 #partners img{
     width: 100px;
@@ -158,7 +176,6 @@ div #mainimg{
 #mapid{
 	background-color: #404040;
 	color: #fff;
-	padding: 10px;
 	text-align: center;
 }
 #mapid:hover{
@@ -171,7 +188,12 @@ div #mainimg{
 	background-color: #f5f5f5;
 	
 }*/
-
+#mapbody{
+	margin-left: 10%;
+}
+#mapbody h3{
+	text-align: center;
+}
 .flags{
 	position: relative;
 	top: -200px;
@@ -213,7 +235,7 @@ div #mainimg{
 
 
 #contactus_id{
-	background-color: #404040;
+	background-color: #CAC7C4;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
@@ -245,9 +267,8 @@ div #mainimg{
     color: #4272db;
 }
 #footer{
-    margin: 0 -15px;
+    margin: 40px 0px 10px 0px;
     
-    background-color: #202020;
     color: #a0a0a0;
     text-align: center;
     
@@ -260,4 +281,51 @@ div #mainimg{
 	transform: rotateY(360deg);
 	transition: all 1.0s linear;
 	transform-style: preserve-3d;
+}
+
+
+.more {
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#advisory-more-hide {
+    display: none;
+
+}
+
+#advisory-more-show {
+    display: block;
+    padding-top: 250px;
+    margin: -230px 0px 0px 0px;
+}
+
+#procurement-more-hide {
+    display: none;
+}
+
+#procurement-more-show {
+    display: block;
+    padding-top: 250px;
+    margin: -230px 0px 0px 0px;
+}
+
+#lab-more-hide {
+    display: none;
+}
+
+#lab-more-show {
+    display: block;
+    padding-top: 250px;
+    margin: -230px 0px 0px 0px;
+}
+
+.content-section {
+	margin: 50px 100px 50px 100px;
+}
+
+#map {
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
